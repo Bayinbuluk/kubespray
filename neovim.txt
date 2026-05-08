@@ -1,0 +1,2093 @@
+- ✅ OK No deprecated functions detected
+
+==============================================================================
+vim.health:                                                                 ✅
+
+System Info ~
+- ✅ OK Up to date (0.12.2)
+- Nvim version: `v0.12.2` 
+- Operating system: Linux 6.12.74+deb13+1-arm64
+- Terminal: unknown
+- $TERM: xterm-256color
+
+Configuration ~
+- ✅ OK no issues found
+
+Runtime ~
+- ✅ OK $VIMRUNTIME: /usr/local/share/nvim/runtime
+
+Performance ~
+- ✅ OK Build type: Release
+
+Remote Plugins ~
+- ✅ OK Up to date
+
+Terminal ~
+- key_backspace (kbs) terminfo entry: `key_backspace=\177`
+- key_dc (kdch1) terminfo entry: `key_dc=\E[3~`
+- $SSH_TTY="/dev/pts/0"
+
+External Tools ~
+- ✅ OK ripgrep 14.1.1 (/usr/bin/rg)
+- ✅ OK vim.ui.open: handler found (xdg-open)
+- ✅ OK git version 2.47.3 (/usr/bin/git)
+- ✅ OK curl 8.14.1 (/usr/bin/curl)
+  curl 8.14.1 (aarch64-unknown-linux-gnu) libcurl/8.14.1 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 nghttp3/1.8.0 librtmp/2.3 OpenLDAP/2.6.10
+  Release-Date: 2025-06-04, security patched: 8.14.1-2+deb13u2
+  Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
+  Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+  curl-related environment variables:
+    https_proxy=http://127.0.0.1:10808
+    http_proxy=http://127.0.0.1:10808
+    all_proxy=socks5://127.0.0.1:10808
+
+==============================================================================
+vim.lsp:                                                                 15 ⚠️
+
+- LSP log level : WARN
+- Log path: /home/huaqli/.local/state/nvim/lsp.log
+- Log size: 49 KB
+
+vim.lsp: Active Features ~
+- document_color
+  - Active buffers:
+
+- inline_completion
+  - Active buffers:
+
+- semantic_tokens
+  - Active buffers:
+      [4]: clangd (id: 1)
+- folding_range
+  - Active buffers:
+
+
+vim.lsp: Active Clients ~
+- clangd (id: 1)
+  - Version: Debian clangd version 19.1.7 (3+b1) linux+grpc aarch64-unknown-linux-gnu
+  - Root directory: /media/huaqli/backup/projects/neovim
+  - Command: { "clangd", "--background-index", "--clang-tidy", "--header-insertion=never", "--completion-style=detailed", "--query-driver=/nix/store/*-gcc-*/bin/gcc*,/nix/store/*-clang-*/bin/clang*,/run/current-system/sw/bin/cc*" }
+  - Settings: {}
+  - Attached buffers: 4
+
+vim.lsp: Enabled Configurations ~
+- ⚠️ WARNING 'c3-lsp' is not executable. Configuration will not be used.
+- c3lsp:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "c3-lsp" }
+  - filetypes: c3
+  - root_markers: { "project.json", ".git" }
+
+- clangd:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "clangd", "--background-index", "--clang-tidy", "--header-insertion=never", "--completion-style=detailed", "--query-driver=/nix/store/*-gcc-*/bin/gcc*,/nix/store/*-clang-*/bin/clang*,/run/current-system/sw/bin/cc*" }
+  - filetypes: c, cpp, objc, objcpp
+  - init_options: {
+      fallbackFlags = { "-std=c23" }
+    }
+  - root_markers: { "compile_commands.json", ".clangd", "configure.ac", "Makefile", ".git" }
+
+- ⚠️ WARNING 'vscode-css-language-server' is not executable. Configuration will not be used.
+- cssls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "vscode-css-language-server", "--stdio" }
+  - filetypes: css, scss, less
+  - root_markers: { "package.json", ".git" }
+  - settings: {
+      css = {
+        validate = true
+      },
+      less = {
+        validate = true
+      },
+      scss = {
+        validate = true
+      }
+    }
+
+- ⚠️ WARNING 'gopls' is not executable. Configuration will not be used.
+- ⚠️ WARNING Unknown filetype 'gotmpl' (Hint: filename extension != filetype).
+- gopls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "gopls" }
+  - filetypes: go, gomod, gowork, gotmpl
+  - root_markers: { "go.mod", "go.work", ".git" }
+  - settings: {
+      gopls = {
+        analyses = {
+          ST1000 = false,
+          ST1003 = false,
+          unusedparams = false
+        },
+        staticcheck = true
+      }
+    }
+
+- ⚠️ WARNING 'haskell-language-server-wrapper' is not executable. Configuration will not be used.
+- hls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "haskell-language-server-wrapper", "--lsp" }
+  - filetypes: haskell, lhaskell
+  - root_markers: { "stack.yaml", "cabal.project", "package.yaml", "*.cabal", "hie.yaml", ".git" }
+  - settings: {
+      haskell = {
+        formattingProvider = "fourmolu",
+        plugin = {
+          semanticTokens = {
+            globalOn = false
+          }
+        }
+      }
+    }
+
+- ⚠️ WARNING 'vscode-json-languageserver' is not executable. Configuration will not be used.
+- jsonls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "vscode-json-languageserver", "--stdio" }
+  - filetypes: json, jsonc
+  - root_markers: { "package.json", ".git", "config.jsonc" }
+
+- ⚠️ WARNING 'lua-language-server' is not executable. Configuration will not be used.
+- luals:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "lua-language-server" }
+  - filetypes: lua
+  - root_markers: { { ".luarc.json", ".luarc.jsonc" }, ".git" }
+  - settings: {
+      Lua = {
+        diagnostics = {
+          globals = { "vim" }
+        },
+        runtime = {
+          version = "LuaJIT"
+        },
+        telemetry = {
+          enable = false
+        },
+        workspace = {
+          checkThirdParty = false,
+          library = { "/home/huaqli/.local/share/nvim/plugins/better-indent-support-for-php-with-html", "/home/huaqli/.local/share/nvim/plugins/vim-oscyank", "/home/huaqli/.local/share/nvim/plugins/undotree", "/home/huaqli/.local/share/nvim/plugins/vim-fugitive", "/home/huaqli/.local/share/nvim/plugins/orgmode", "/home/huaqli/.local/share/nvim/plugins/nvim-highlight-colors", "/home/huaqli/.local/share/nvim/plugins/lualine.nvim", "/home/huaqli/.local/share/nvim/plugins/tokyonight.nvim", "/home/huaqli/.local/share/nvim/plugins/harpoon", "/home/huaqli/.local/share/nvim/plugins/telescope.nvim", "/home/huaqli/.local/share/nvim/plugins/cmp-buffer", "/home/huaqli/.local/share/nvim/plugins/cmp-path", "/home/huaqli/.local/share/nvim/plugins/cmp-nvim-lsp", "/home/huaqli/.local/share/nvim/plugins/nvim-cmp", "/home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context", "/home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects", "/home/huaqli/.local/share/nvim/plugins/nvim-treesitter", "/home/huaqli/.local/share/nvim/plugins/nvim-web-devicons", "/home/huaqli/.local/share/nvim/plugins/plenary.nvim", "/home/huaqli/.config/nvim", "/usr/local/share/nvim/runtime", "/usr/local/lib/nvim", "/home/huaqli/.config/nvim/after", "/home/huaqli/.local/share/nvim/plugins/cmp-nvim-lsp/after", "/home/huaqli/.local/share/nvim/plugins/cmp-path/after", "/home/huaqli/.local/share/nvim/plugins/cmp-buffer/after", "/home/tony/repos/oxwm/templates" }
+        }
+      }
+    }
+
+- ⚠️ WARNING 'nil' is not executable. Configuration will not be used.
+- nil_ls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "nil" }
+  - filetypes: nix
+  - root_markers: { "flake.nix", "default.nix", ".git" }
+  - settings: {
+      ["nil"] = {
+        formatting = {
+          command = { "alejandra" }
+        }
+      }
+    }
+
+- ⚠️ WARNING 'intelephense' is not executable. Configuration will not be used.
+- phpls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "intelephense", "--stdio" }
+  - filetypes: php
+  - root_markers: { "composer.json", ".git" }
+  - settings: {
+      intelephense = {
+        files = {
+          maxSize = 5000000
+        }
+      }
+    }
+
+- rust_analyzer:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "rust-analyzer" }
+  - filetypes: rust
+  - root_markers: { "Cargo.toml", "rust-project.json", ".git" }
+  - settings: {
+      ["rust-analyzer"] = {
+        cargo = {
+          allFeatures = true
+        },
+        formatting = {
+          command = { "rustfmt" }
+        }
+      }
+    }
+
+- ⚠️ WARNING 'serve-d' is not executable. Configuration will not be used.
+- serve_d:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "serve-d" }
+  - filetypes: d
+  - root_markers: { "dub.sdl", "dub.json", ".git" }
+
+- ⚠️ WARNING 'templ' is not executable. Configuration will not be used.
+- templ:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "templ", "lsp" }
+  - filetypes: templ
+  - root_markers: { "go.mod", ".git" }
+
+- ⚠️ WARNING 'typescript-language-server' is not executable. Configuration will not be used.
+- ⚠️ WARNING Unknown filetype 'javascript.jsx' (Hint: filename extension != filetype).
+- ⚠️ WARNING Unknown filetype 'typescript.tsx' (Hint: filename extension != filetype).
+- ts_ls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "typescript-language-server", "--stdio" }
+  - filetypes: javascript, javascriptreact, javascript.jsx, typescript, typescriptreact, typescript.tsx
+  - root_markers: { "package.json", "tsconfig.json", "jsconfig.json", ".git" }
+  - settings: {
+      completions = {
+        completeFunctionCalls = true
+      }
+    }
+
+- ⚠️ WARNING 'zls' is not executable. Configuration will not be used.
+- zls:
+  - capabilities: {
+      textDocument = {
+        completion = {
+          completionItem = {
+            commitCharactersSupport = true,
+            deprecatedSupport = true,
+            insertReplaceSupport = true,
+            insertTextModeSupport = {
+              valueSet = { 1, 2 }
+            },
+            labelDetailsSupport = true,
+            preselectSupport = true,
+            resolveSupport = {
+              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
+            },
+            snippetSupport = true,
+            tagSupport = {
+              valueSet = { 1 }
+            }
+          },
+          completionList = {
+            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+          },
+          contextSupport = true,
+          dynamicRegistration = false,
+          insertTextMode = 1
+        }
+      }
+    }
+  - cmd: { "zls" }
+  - filetypes: zig, zir
+  - root_markers: { "zls.json", "build.zig", ".git" }
+  - settings: {
+      zls = {
+        build_on_save_step = "install",
+        enable_build_on_save = true,
+        enable_snippets = true,
+        warn_style = false
+      }
+    }
+
+
+vim.lsp: File Watcher ~
+- file watching "(workspace/didChangeWatchedFiles)" disabled on all clients
+
+vim.lsp: Position Encodings ~
+- No buffers contain mixed position encodings
+
+==============================================================================
+vim.pack:                                                                   ✅
+
+vim.pack: basics ~
+- ✅ OK `vim.pack` is not used
+
+==============================================================================
+vim.provider:                                                             6 ⚠️
+
+Clipboard (optional) ~
+- ⚠️ WARNING No clipboard tool found. Clipboard registers (`"+` and `"*`) will not work.
+  - ADVICE:
+    - :help |clipboard|
+
+Node.js provider (optional) ~
+- ⚠️ WARNING `node` and `npm` (or `yarn`, `pnpm`) must be in $PATH.
+  - ADVICE:
+    - Install Node.js and verify that `node` and `npm` (or `yarn`, `pnpm`) commands work.
+
+Perl provider (optional) ~
+- ⚠️ WARNING "Neovim::Ext" cpan module is not installed
+  - ADVICE:
+    - See :help |provider-perl| for more information.
+    - You can disable this provider (and warning) by adding `let g:loaded_perl_provider = 0` to your init.vim
+- ⚠️ WARNING No usable perl executable found
+
+Python 3 provider (optional) ~
+- `g:python3_host_prog` is not set. Searching for python3 in the environment.
+- Executable: /usr/bin/python3
+- Python version: 3.13.5
+- pynvim version: 0.5.2 (outdated; from /usr/lib/python3/dist-packages/neovim)
+- ⚠️ WARNING Latest pynvim is NOT installed: 0.6.0
+
+Python virtualenv ~
+- ✅ OK no $VIRTUAL_ENV
+
+Ruby provider (optional) ~
+- Ruby: 3.3.8
+- ⚠️ WARNING `neovim-ruby-host` not found.
+  - ADVICE:
+    - Run `gem install neovim` to ensure the neovim RubyGem is installed.
+    - Run `gem environment` to ensure the gem bin directory is in $PATH.
+    - If you are using rvm/rbenv/chruby, try "rehashing".
+    - See :help |g:ruby_host_prog| for non-standard gem installations.
+    - You can disable this provider (and warning) by adding `let g:loaded_ruby_provider = 0` to your init.vim
+
+==============================================================================
+vim.treesitter:                                                             ✅
+
+Treesitter features ~
+- Treesitter ABI support: min 13, max 15
+- WASM parser support: false
+
+Treesitter parsers ~
+- ✅ OK Parser: astro                     ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/astro.so
+- ✅ OK Parser: bash                      ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/bash.so
+- ✅ OK Parser: c                         ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/c.so
+- ✅ OK Parser: c                    (not loaded), path: /usr/local/lib/nvim/parser/c.so
+- ✅ OK Parser: css                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/css.so
+- ✅ OK Parser: d                         ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/d.so
+- ✅ OK Parser: dockerfile                ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/dockerfile.so
+- ✅ OK Parser: gitignore                 ABI: 13, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/gitignore.so
+- ✅ OK Parser: go                        ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/go.so
+- ✅ OK Parser: haskell                   ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/haskell.so
+- ✅ OK Parser: html                      ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/html.so
+- ✅ OK Parser: javascript                ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/javascript.so
+- ✅ OK Parser: json                      ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/json.so
+- ✅ OK Parser: lua                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/lua.so
+- ✅ OK Parser: lua                  (not loaded), path: /usr/local/lib/nvim/parser/lua.so
+- ✅ OK Parser: markdown                  ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/markdown.so
+- ✅ OK Parser: markdown             (not loaded), path: /usr/local/lib/nvim/parser/markdown.so
+- ✅ OK Parser: markdown_inline           ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/markdown_inline.so
+- ✅ OK Parser: markdown_inline      (not loaded), path: /usr/local/lib/nvim/parser/markdown_inline.so
+- ✅ OK Parser: org                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/orgmode/parser/org.so
+- ✅ OK Parser: php                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/php.so
+- ✅ OK Parser: python                    ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/python.so
+- ✅ OK Parser: query                     ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/query.so
+- ✅ OK Parser: query                (not loaded), path: /usr/local/lib/nvim/parser/query.so
+- ✅ OK Parser: ron                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/ron.so
+- ✅ OK Parser: rust                      ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/rust.so
+- ✅ OK Parser: templ                     ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/templ.so
+- ✅ OK Parser: tsx                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/tsx.so
+- ✅ OK Parser: typescript                ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/typescript.so
+- ✅ OK Parser: vim                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/vim.so
+- ✅ OK Parser: vim                  (not loaded), path: /usr/local/lib/nvim/parser/vim.so
+- ✅ OK Parser: vimdoc                    ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/vimdoc.so
+- ✅ OK Parser: vimdoc               (not loaded), path: /usr/local/lib/nvim/parser/vimdoc.so
+- ✅ OK Parser: yaml                      ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/yaml.so
+- ✅ OK Parser: zig                       ABI: 14, path: /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/parser/zig.so
+
+Treesitter queries ~
+- ✅ OK ada             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/ada
+- ✅ OK ada             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ada
+- ✅ OK ada             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ada
+- ✅ OK ada             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ada
+- ✅ OK ada             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ada
+- ✅ OK agda            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/agda
+- ✅ OK agda            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/agda
+- ✅ OK agda            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/agda
+- ✅ OK angular         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/angular
+- ✅ OK angular         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/angular
+- ✅ OK angular         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/angular
+- ✅ OK angular         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/angular
+- ✅ OK angular         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/angular
+- ✅ OK apex            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/apex
+- ✅ OK apex            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/apex
+- ✅ OK apex            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/apex
+- ✅ OK apex            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/apex
+- ✅ OK apex            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/apex
+- ✅ OK apex            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/apex
+- ✅ OK arduino         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/arduino
+- ✅ OK arduino         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/arduino
+- ✅ OK arduino         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/arduino
+- ✅ OK arduino         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/arduino
+- ✅ OK arduino         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/arduino
+- ✅ OK asm             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/asm
+- ✅ OK asm             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/asm
+- ✅ OK astro           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/astro
+- ✅ OK astro           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/astro
+- ✅ OK astro           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/astro
+- ✅ OK astro           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/astro
+- ✅ OK astro           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/astro
+- ✅ OK astro           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/astro
+- ✅ OK authzed         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/authzed
+- ✅ OK authzed         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/authzed
+- ✅ OK awk             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/awk
+- ✅ OK awk             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/awk
+- ✅ OK bash            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/bash
+- ✅ OK bash            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bash
+- ✅ OK bash            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bash
+- ✅ OK bash            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bash
+- ✅ OK bash            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bash
+- ✅ OK bash            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/bash
+- ✅ OK bass            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bass
+- ✅ OK bass            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bass
+- ✅ OK bass            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bass
+- ✅ OK bass            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bass
+- ✅ OK bass            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bass
+- ✅ OK beancount       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/beancount
+- ✅ OK beancount       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/beancount
+- ✅ OK beancount       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/beancount
+- ✅ OK bibtex          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bibtex
+- ✅ OK bibtex          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bibtex
+- ✅ OK bibtex          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bibtex
+- ✅ OK bibtex          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bibtex
+- ✅ OK bibtex          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/bibtex
+- ✅ OK bicep           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bicep
+- ✅ OK bicep           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bicep
+- ✅ OK bicep           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bicep
+- ✅ OK bicep           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bicep
+- ✅ OK bicep           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bicep
+- ✅ OK bitbake         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bitbake
+- ✅ OK bitbake         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bitbake
+- ✅ OK bitbake         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bitbake
+- ✅ OK bitbake         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bitbake
+- ✅ OK bitbake         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bitbake
+- ✅ OK blade           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blade
+- ✅ OK blade           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blade
+- ✅ OK blade           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blade
+- ✅ OK blade           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blade
+- ✅ OK blueprint       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blueprint
+- ✅ OK blueprint       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/blueprint
+- ✅ OK bp              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bp
+- ✅ OK bp              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bp
+- ✅ OK bp              indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bp
+- ✅ OK bp              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bp
+- ✅ OK bp              locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/bp
+- ✅ OK brightscript    folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/brightscript
+- ✅ OK brightscript    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/brightscript
+- ✅ OK brightscript    indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/brightscript
+- ✅ OK brightscript    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/brightscript
+- ✅ OK c               context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/c
+- ✅ OK c               folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c
+- ✅ OK c               folds           /usr/local/share/nvim/runtime/queries/c
+- ✅ OK c               highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c
+- ✅ OK c               highlights      /usr/local/share/nvim/runtime/queries/c
+- ✅ OK c               indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c
+- ✅ OK c               injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c
+- ✅ OK c               injections      /usr/local/share/nvim/runtime/queries/c
+- ✅ OK c               locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c
+- ✅ OK c               textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/c
+- ✅ OK c_sharp         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/c_sharp
+- ✅ OK c_sharp         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c_sharp
+- ✅ OK c_sharp         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c_sharp
+- ✅ OK c_sharp         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c_sharp
+- ✅ OK c_sharp         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/c_sharp
+- ✅ OK c_sharp         textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/c_sharp
+- ✅ OK caddy           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/caddy
+- ✅ OK caddy           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/caddy
+- ✅ OK caddy           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/caddy
+- ✅ OK caddy           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/caddy
+- ✅ OK cairo           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cairo
+- ✅ OK cairo           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cairo
+- ✅ OK cairo           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cairo
+- ✅ OK cairo           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cairo
+- ✅ OK cairo           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cairo
+- ✅ OK capnp           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/capnp
+- ✅ OK capnp           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/capnp
+- ✅ OK capnp           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/capnp
+- ✅ OK capnp           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/capnp
+- ✅ OK capnp           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/capnp
+- ✅ OK capnp           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/capnp
+- ✅ OK chatito         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/chatito
+- ✅ OK chatito         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/chatito
+- ✅ OK chatito         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/chatito
+- ✅ OK chatito         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/chatito
+- ✅ OK chatito         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/chatito
+- ✅ OK circom          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/circom
+- ✅ OK circom          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/circom
+- ✅ OK circom          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/circom
+- ✅ OK circom          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/circom
+- ✅ OK clojure         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/clojure
+- ✅ OK clojure         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/clojure
+- ✅ OK clojure         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/clojure
+- ✅ OK clojure         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/clojure
+- ✅ OK clojure         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/clojure
+- ✅ OK cmake           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/cmake
+- ✅ OK cmake           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cmake
+- ✅ OK cmake           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cmake
+- ✅ OK cmake           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cmake
+- ✅ OK cmake           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cmake
+- ✅ OK cmake           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/cmake
+- ✅ OK comment         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/comment
+- ✅ OK commonlisp      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/commonlisp
+- ✅ OK commonlisp      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/commonlisp
+- ✅ OK commonlisp      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/commonlisp
+- ✅ OK commonlisp      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/commonlisp
+- ✅ OK cooklang        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cooklang
+- ✅ OK cooklang        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cooklang
+- ✅ OK corn            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/corn
+- ✅ OK corn            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/corn
+- ✅ OK corn            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/corn
+- ✅ OK corn            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/corn
+- ✅ OK corn            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/corn
+- ✅ OK cpon            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpon
+- ✅ OK cpon            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpon
+- ✅ OK cpon            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpon
+- ✅ OK cpon            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpon
+- ✅ OK cpon            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpon
+- ✅ OK cpp             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/cpp
+- ✅ OK cpp             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpp
+- ✅ OK cpp             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpp
+- ✅ OK cpp             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpp
+- ✅ OK cpp             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpp
+- ✅ OK cpp             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cpp
+- ✅ OK cpp             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/cpp
+- ✅ OK css             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/css
+- ✅ OK css             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/css
+- ✅ OK css             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/css
+- ✅ OK css             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/css
+- ✅ OK css             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/css
+- ✅ OK css             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/css
+- ✅ OK csv             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/csv
+- ✅ OK cuda            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/cuda
+- ✅ OK cuda            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cuda
+- ✅ OK cuda            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cuda
+- ✅ OK cuda            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cuda
+- ✅ OK cuda            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cuda
+- ✅ OK cuda            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cuda
+- ✅ OK cuda            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/cuda
+- ✅ OK cue             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/cue
+- ✅ OK cue             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cue
+- ✅ OK cue             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cue
+- ✅ OK cue             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cue
+- ✅ OK cue             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cue
+- ✅ OK cue             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cue
+- ✅ OK cylc            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cylc
+- ✅ OK cylc            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cylc
+- ✅ OK cylc            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cylc
+- ✅ OK cylc            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/cylc
+- ✅ OK d               context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/d
+- ✅ OK d               folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/d
+- ✅ OK d               highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/d
+- ✅ OK d               indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/d
+- ✅ OK d               injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/d
+- ✅ OK d               locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/d
+- ✅ OK dart            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/dart
+- ✅ OK dart            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dart
+- ✅ OK dart            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dart
+- ✅ OK dart            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dart
+- ✅ OK dart            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dart
+- ✅ OK dart            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dart
+- ✅ OK dart            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/dart
+- ✅ OK desktop         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/desktop
+- ✅ OK desktop         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/desktop
+- ✅ OK desktop         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/desktop
+- ✅ OK devicetree      context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/devicetree
+- ✅ OK devicetree      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/devicetree
+- ✅ OK devicetree      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/devicetree
+- ✅ OK devicetree      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/devicetree
+- ✅ OK devicetree      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/devicetree
+- ✅ OK devicetree      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/devicetree
+- ✅ OK dhall           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dhall
+- ✅ OK dhall           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dhall
+- ✅ OK dhall           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dhall
+- ✅ OK diff            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/diff
+- ✅ OK diff            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/diff
+- ✅ OK diff            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/diff
+- ✅ OK diff            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/diff
+- ✅ OK disassembly     highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/disassembly
+- ✅ OK disassembly     injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/disassembly
+- ✅ OK djot            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/djot
+- ✅ OK djot            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/djot
+- ✅ OK djot            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/djot
+- ✅ OK djot            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/djot
+- ✅ OK djot            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/djot
+- ✅ OK dockerfile      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dockerfile
+- ✅ OK dockerfile      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dockerfile
+- ✅ OK dockerfile      textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/dockerfile
+- ✅ OK dot             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dot
+- ✅ OK dot             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dot
+- ✅ OK dot             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dot
+- ✅ OK doxygen         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/doxygen
+- ✅ OK doxygen         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/doxygen
+- ✅ OK doxygen         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/doxygen
+- ✅ OK dtd             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dtd
+- ✅ OK dtd             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dtd
+- ✅ OK dtd             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dtd
+- ✅ OK dtd             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/dtd
+- ✅ OK earthfile       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/earthfile
+- ✅ OK earthfile       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/earthfile
+- ✅ OK ebnf            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ebnf
+- ✅ OK ebnf            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ebnf
+- ✅ OK ecma            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ecma
+- ✅ OK ecma            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ecma
+- ✅ OK ecma            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ecma
+- ✅ OK ecma            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ecma
+- ✅ OK ecma            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ecma
+- ✅ OK ecma            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/ecma
+- ✅ OK editorconfig    folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/editorconfig
+- ✅ OK editorconfig    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/editorconfig
+- ✅ OK editorconfig    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/editorconfig
+- ✅ OK eds             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/eds
+- ✅ OK eds             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/eds
+- ✅ OK eex             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/eex
+- ✅ OK eex             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/eex
+- ✅ OK elixir          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/elixir
+- ✅ OK elixir          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elixir
+- ✅ OK elixir          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elixir
+- ✅ OK elixir          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elixir
+- ✅ OK elixir          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elixir
+- ✅ OK elixir          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elixir
+- ✅ OK elixir          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/elixir
+- ✅ OK elm             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/elm
+- ✅ OK elm             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elm
+- ✅ OK elm             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elm
+- ✅ OK elm             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elm
+- ✅ OK elm             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/elm
+- ✅ OK elsa            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elsa
+- ✅ OK elsa            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elsa
+- ✅ OK elsa            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elsa
+- ✅ OK elsa            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elsa
+- ✅ OK elsa            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elsa
+- ✅ OK elvish          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elvish
+- ✅ OK elvish          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/elvish
+- ✅ OK embedded_template highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/embedded_template
+- ✅ OK embedded_template injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/embedded_template
+- ✅ OK enforce         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/enforce
+- ✅ OK enforce         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/enforce
+- ✅ OK enforce         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/enforce
+- ✅ OK enforce         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/enforce
+- ✅ OK enforce         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/enforce
+- ✅ OK enforce         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/enforce
+- ✅ OK enforce         textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/enforce
+- ✅ OK erlang          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/erlang
+- ✅ OK erlang          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/erlang
+- ✅ OK erlang          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/erlang
+- ✅ OK facility        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/facility
+- ✅ OK facility        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/facility
+- ✅ OK facility        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/facility
+- ✅ OK facility        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/facility
+- ✅ OK faust           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/faust
+- ✅ OK faust           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/faust
+- ✅ OK fennel          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/fennel
+- ✅ OK fennel          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fennel
+- ✅ OK fennel          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fennel
+- ✅ OK fennel          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fennel
+- ✅ OK fennel          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fennel
+- ✅ OK fennel          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/fennel
+- ✅ OK fidl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fidl
+- ✅ OK fidl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fidl
+- ✅ OK fidl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fidl
+- ✅ OK firrtl          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/firrtl
+- ✅ OK firrtl          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/firrtl
+- ✅ OK firrtl          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/firrtl
+- ✅ OK firrtl          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/firrtl
+- ✅ OK firrtl          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/firrtl
+- ✅ OK fish            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/fish
+- ✅ OK fish            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fish
+- ✅ OK fish            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fish
+- ✅ OK fish            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fish
+- ✅ OK fish            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fish
+- ✅ OK fish            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fish
+- ✅ OK fish            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/fish
+- ✅ OK foam            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/foam
+- ✅ OK foam            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/foam
+- ✅ OK foam            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/foam
+- ✅ OK foam            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/foam
+- ✅ OK foam            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/foam
+- ✅ OK foam            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/foam
+- ✅ OK forth           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/forth
+- ✅ OK forth           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/forth
+- ✅ OK forth           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/forth
+- ✅ OK forth           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/forth
+- ✅ OK forth           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/forth
+- ✅ OK fortran         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/fortran
+- ✅ OK fortran         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fortran
+- ✅ OK fortran         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fortran
+- ✅ OK fortran         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fortran
+- ✅ OK fortran         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fortran
+- ✅ OK fsh             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fsh
+- ✅ OK fsh             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fsh
+- ✅ OK fsharp          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fsharp
+- ✅ OK fsharp          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fsharp
+- ✅ OK func            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/func
+- ✅ OK func            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/func
+- ✅ OK fusion          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fusion
+- ✅ OK fusion          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fusion
+- ✅ OK fusion          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fusion
+- ✅ OK fusion          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fusion
+- ✅ OK fusion          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/fusion
+- ✅ OK gap             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gap
+- ✅ OK gap             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gap
+- ✅ OK gap             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gap
+- ✅ OK gap             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gap
+- ✅ OK gaptst          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gaptst
+- ✅ OK gaptst          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gaptst
+- ✅ OK gaptst          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gaptst
+- ✅ OK gdscript        context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/gdscript
+- ✅ OK gdscript        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdscript
+- ✅ OK gdscript        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdscript
+- ✅ OK gdscript        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdscript
+- ✅ OK gdscript        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdscript
+- ✅ OK gdscript        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdscript
+- ✅ OK gdscript        textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/gdscript
+- ✅ OK gdshader        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdshader
+- ✅ OK gdshader        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gdshader
+- ✅ OK git_config      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/git_config
+- ✅ OK git_config      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/git_config
+- ✅ OK git_config      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/git_config
+- ✅ OK git_config      textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/git_config
+- ✅ OK git_rebase      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/git_rebase
+- ✅ OK git_rebase      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/git_rebase
+- ✅ OK gitattributes   highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitattributes
+- ✅ OK gitattributes   injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitattributes
+- ✅ OK gitattributes   locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitattributes
+- ✅ OK gitcommit       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitcommit
+- ✅ OK gitcommit       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitcommit
+- ✅ OK gitignore       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitignore
+- ✅ OK gitignore       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gitignore
+- ✅ OK gleam           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gleam
+- ✅ OK gleam           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gleam
+- ✅ OK gleam           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gleam
+- ✅ OK gleam           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gleam
+- ✅ OK gleam           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gleam
+- ✅ OK gleam           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/gleam
+- ✅ OK glimmer         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/glimmer
+- ✅ OK glimmer         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer
+- ✅ OK glimmer         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer
+- ✅ OK glimmer         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer
+- ✅ OK glimmer         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer
+- ✅ OK glimmer         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer
+- ✅ OK glimmer         textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/glimmer
+- ✅ OK glimmer_javascript highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_javascript
+- ✅ OK glimmer_javascript indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_javascript
+- ✅ OK glimmer_javascript injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_javascript
+- ✅ OK glimmer_javascript locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_javascript
+- ✅ OK glimmer_typescript highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_typescript
+- ✅ OK glimmer_typescript indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_typescript
+- ✅ OK glimmer_typescript injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glimmer_typescript
+- ✅ OK glsl            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/glsl
+- ✅ OK glsl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glsl
+- ✅ OK glsl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glsl
+- ✅ OK glsl            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glsl
+- ✅ OK glsl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glsl
+- ✅ OK glsl            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/glsl
+- ✅ OK glsl            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/glsl
+- ✅ OK gn              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gn
+- ✅ OK gn              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gn
+- ✅ OK gn              indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gn
+- ✅ OK gn              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gn
+- ✅ OK gn              locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gn
+- ✅ OK gnuplot         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gnuplot
+- ✅ OK gnuplot         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gnuplot
+- ✅ OK go              context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/go
+- ✅ OK go              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/go
+- ✅ OK go              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/go
+- ✅ OK go              indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/go
+- ✅ OK go              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/go
+- ✅ OK go              locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/go
+- ✅ OK go              textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/go
+- ✅ OK goctl           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/goctl
+- ✅ OK goctl           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/goctl
+- ✅ OK goctl           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/goctl
+- ✅ OK goctl           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/goctl
+- ✅ OK godot_resource  folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/godot_resource
+- ✅ OK godot_resource  highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/godot_resource
+- ✅ OK godot_resource  injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/godot_resource
+- ✅ OK godot_resource  locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/godot_resource
+- ✅ OK gomod           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gomod
+- ✅ OK gomod           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gomod
+- ✅ OK goon            highlights      /home/huaqli/.config/nvim/queries/goon
+- ✅ OK gosum           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gosum
+- ✅ OK gotmpl          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gotmpl
+- ✅ OK gotmpl          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gotmpl
+- ✅ OK gotmpl          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gotmpl
+- ✅ OK gotmpl          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gotmpl
+- ✅ OK gowork          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gowork
+- ✅ OK gowork          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gowork
+- ✅ OK gpg             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gpg
+- ✅ OK gpg             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gpg
+- ✅ OK graphql         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/graphql
+- ✅ OK graphql         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/graphql
+- ✅ OK graphql         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/graphql
+- ✅ OK graphql         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/graphql
+- ✅ OK gren            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gren
+- ✅ OK gren            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gren
+- ✅ OK groovy          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/groovy
+- ✅ OK groovy          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/groovy
+- ✅ OK groovy          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/groovy
+- ✅ OK groovy          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/groovy
+- ✅ OK groovy          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/groovy
+- ✅ OK groovy          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/groovy
+- ✅ OK gstlaunch       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/gstlaunch
+- ✅ OK hack            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hack
+- ✅ OK hack            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hack
+- ✅ OK hack            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/hack
+- ✅ OK hare            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hare
+- ✅ OK hare            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hare
+- ✅ OK hare            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hare
+- ✅ OK hare            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hare
+- ✅ OK hare            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hare
+- ✅ OK haskell         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/haskell
+- ✅ OK haskell         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell
+- ✅ OK haskell         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell
+- ✅ OK haskell         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell
+- ✅ OK haskell         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell
+- ✅ OK haskell         textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/haskell
+- ✅ OK haskell_persistent folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell_persistent
+- ✅ OK haskell_persistent highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/haskell_persistent
+- ✅ OK hcl             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hcl
+- ✅ OK hcl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hcl
+- ✅ OK hcl             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hcl
+- ✅ OK hcl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hcl
+- ✅ OK hcl             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/hcl
+- ✅ OK heex            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/heex
+- ✅ OK heex            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/heex
+- ✅ OK heex            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/heex
+- ✅ OK heex            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/heex
+- ✅ OK heex            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/heex
+- ✅ OK heex            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/heex
+- ✅ OK helm            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/helm
+- ✅ OK helm            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/helm
+- ✅ OK helm            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/helm
+- ✅ OK helm            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/helm
+- ✅ OK hjson           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hjson
+- ✅ OK hjson           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hjson
+- ✅ OK hjson           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hjson
+- ✅ OK hjson           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hjson
+- ✅ OK hjson           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hjson
+- ✅ OK hlsl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsl
+- ✅ OK hlsl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsl
+- ✅ OK hlsl            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsl
+- ✅ OK hlsl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsl
+- ✅ OK hlsl            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsl
+- ✅ OK hlsl            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/hlsl
+- ✅ OK hlsplaylist     highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsplaylist
+- ✅ OK hlsplaylist     injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hlsplaylist
+- ✅ OK hocon           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hocon
+- ✅ OK hocon           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hocon
+- ✅ OK hocon           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hocon
+- ✅ OK hoon            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hoon
+- ✅ OK hoon            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hoon
+- ✅ OK hoon            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hoon
+- ✅ OK hoon            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hoon
+- ✅ OK html            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/html
+- ✅ OK html            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html
+- ✅ OK html            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html
+- ✅ OK html            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html
+- ✅ OK html            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html
+- ✅ OK html            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html
+- ✅ OK html            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/html
+- ✅ OK html_tags       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html_tags
+- ✅ OK html_tags       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html_tags
+- ✅ OK html_tags       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/html_tags
+- ✅ OK htmldjango      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/htmldjango
+- ✅ OK htmldjango      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/htmldjango
+- ✅ OK htmldjango      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/htmldjango
+- ✅ OK htmldjango      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/htmldjango
+- ✅ OK http            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/http
+- ✅ OK http            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/http
+- ✅ OK http            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/http
+- ✅ OK hurl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hurl
+- ✅ OK hurl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hurl
+- ✅ OK hurl            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hurl
+- ✅ OK hurl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hurl
+- ✅ OK hyprlang        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hyprlang
+- ✅ OK hyprlang        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hyprlang
+- ✅ OK hyprlang        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hyprlang
+- ✅ OK hyprlang        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/hyprlang
+- ✅ OK idl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idl
+- ✅ OK idl             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idl
+- ✅ OK idl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idl
+- ✅ OK idris           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idris
+- ✅ OK idris           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idris
+- ✅ OK idris           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idris
+- ✅ OK idris           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/idris
+- ✅ OK ini             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/ini
+- ✅ OK ini             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ini
+- ✅ OK ini             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ini
+- ✅ OK ini             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ini
+- ✅ OK inko            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/inko
+- ✅ OK inko            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/inko
+- ✅ OK inko            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/inko
+- ✅ OK inko            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/inko
+- ✅ OK inko            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/inko
+- ✅ OK inko            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/inko
+- ✅ OK ipkg            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ipkg
+- ✅ OK ipkg            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ipkg
+- ✅ OK ipkg            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ipkg
+- ✅ OK ipkg            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ipkg
+- ✅ OK ipkg            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ipkg
+- ✅ OK ispc            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ispc
+- ✅ OK ispc            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ispc
+- ✅ OK ispc            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ispc
+- ✅ OK ispc            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ispc
+- ✅ OK ispc            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ispc
+- ✅ OK janet_simple    context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/janet_simple
+- ✅ OK janet_simple    folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/janet_simple
+- ✅ OK janet_simple    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/janet_simple
+- ✅ OK janet_simple    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/janet_simple
+- ✅ OK janet_simple    locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/janet_simple
+- ✅ OK java            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/java
+- ✅ OK java            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/java
+- ✅ OK java            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/java
+- ✅ OK java            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/java
+- ✅ OK java            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/java
+- ✅ OK java            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/java
+- ✅ OK java            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/java
+- ✅ OK javadoc         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javadoc
+- ✅ OK javadoc         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javadoc
+- ✅ OK javadoc         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javadoc
+- ✅ OK javascript      context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/javascript
+- ✅ OK javascript      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javascript
+- ✅ OK javascript      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javascript
+- ✅ OK javascript      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javascript
+- ✅ OK javascript      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javascript
+- ✅ OK javascript      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/javascript
+- ✅ OK javascript      textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/javascript
+- ✅ OK jinja           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jinja
+- ✅ OK jinja           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jinja
+- ✅ OK jinja_inline    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jinja_inline
+- ✅ OK jinja_inline    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jinja_inline
+- ✅ OK jq              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jq
+- ✅ OK jq              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jq
+- ✅ OK jq              locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jq
+- ✅ OK jsdoc           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsdoc
+- ✅ OK json            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/json
+- ✅ OK json            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json
+- ✅ OK json            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json
+- ✅ OK json            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json
+- ✅ OK json            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json
+- ✅ OK json            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/json
+- ✅ OK json5           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json5
+- ✅ OK json5           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/json5
+- ✅ OK jsonc           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonc
+- ✅ OK jsonc           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonc
+- ✅ OK jsonc           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonc
+- ✅ OK jsonc           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonc
+- ✅ OK jsonc           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonc
+- ✅ OK jsonnet         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/jsonnet
+- ✅ OK jsonnet         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonnet
+- ✅ OK jsonnet         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonnet
+- ✅ OK jsonnet         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonnet
+- ✅ OK jsonnet         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsonnet
+- ✅ OK jsx             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsx
+- ✅ OK jsx             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsx
+- ✅ OK jsx             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsx
+- ✅ OK jsx             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/jsx
+- ✅ OK jsx             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/jsx
+- ✅ OK julia           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/julia
+- ✅ OK julia           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/julia
+- ✅ OK julia           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/julia
+- ✅ OK julia           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/julia
+- ✅ OK julia           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/julia
+- ✅ OK julia           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/julia
+- ✅ OK julia           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/julia
+- ✅ OK just            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/just
+- ✅ OK just            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/just
+- ✅ OK just            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/just
+- ✅ OK just            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/just
+- ✅ OK just            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/just
+- ✅ OK kcl             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kcl
+- ✅ OK kcl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kcl
+- ✅ OK kcl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kcl
+- ✅ OK kconfig         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kconfig
+- ✅ OK kconfig         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kconfig
+- ✅ OK kconfig         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kconfig
+- ✅ OK kconfig         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kconfig
+- ✅ OK kconfig         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kconfig
+- ✅ OK kdl             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/kdl
+- ✅ OK kdl             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kdl
+- ✅ OK kdl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kdl
+- ✅ OK kdl             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kdl
+- ✅ OK kdl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kdl
+- ✅ OK kdl             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kdl
+- ✅ OK kotlin          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/kotlin
+- ✅ OK kotlin          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kotlin
+- ✅ OK kotlin          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kotlin
+- ✅ OK kotlin          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kotlin
+- ✅ OK kotlin          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kotlin
+- ✅ OK kotlin          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/kotlin
+- ✅ OK koto            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/koto
+- ✅ OK koto            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/koto
+- ✅ OK koto            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/koto
+- ✅ OK koto            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/koto
+- ✅ OK kusto           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kusto
+- ✅ OK kusto           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/kusto
+- ✅ OK lalrpop         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lalrpop
+- ✅ OK lalrpop         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lalrpop
+- ✅ OK lalrpop         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lalrpop
+- ✅ OK lalrpop         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lalrpop
+- ✅ OK latex           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/latex
+- ✅ OK latex           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/latex
+- ✅ OK latex           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/latex
+- ✅ OK latex           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/latex
+- ✅ OK latex           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/latex
+- ✅ OK ledger          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ledger
+- ✅ OK ledger          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ledger
+- ✅ OK ledger          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ledger
+- ✅ OK ledger          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ledger
+- ✅ OK leo             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/leo
+- ✅ OK leo             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/leo
+- ✅ OK leo             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/leo
+- ✅ OK linkerscript    folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/linkerscript
+- ✅ OK linkerscript    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/linkerscript
+- ✅ OK linkerscript    indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/linkerscript
+- ✅ OK linkerscript    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/linkerscript
+- ✅ OK linkerscript    locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/linkerscript
+- ✅ OK liquid          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquid
+- ✅ OK liquid          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquid
+- ✅ OK liquidsoap      context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/liquidsoap
+- ✅ OK liquidsoap      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquidsoap
+- ✅ OK liquidsoap      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquidsoap
+- ✅ OK liquidsoap      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquidsoap
+- ✅ OK liquidsoap      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquidsoap
+- ✅ OK liquidsoap      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/liquidsoap
+- ✅ OK llvm            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/llvm
+- ✅ OK llvm            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/llvm
+- ✅ OK lua             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/lua
+- ✅ OK lua             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lua
+- ✅ OK lua             folds           /usr/local/share/nvim/runtime/queries/lua
+- ✅ OK lua             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lua
+- ✅ OK lua             highlights      /usr/local/share/nvim/runtime/queries/lua
+- ✅ OK lua             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lua
+- ✅ OK lua             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lua
+- ✅ OK lua             injections      /usr/local/share/nvim/runtime/queries/lua
+- ✅ OK lua             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/lua
+- ✅ OK lua             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/lua
+- ✅ OK luadoc          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luadoc
+- ✅ OK luap            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luap
+- ✅ OK luau            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luau
+- ✅ OK luau            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luau
+- ✅ OK luau            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luau
+- ✅ OK luau            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luau
+- ✅ OK luau            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/luau
+- ✅ OK m68k            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/m68k
+- ✅ OK m68k            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/m68k
+- ✅ OK m68k            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/m68k
+- ✅ OK m68k            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/m68k
+- ✅ OK make            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/make
+- ✅ OK make            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/make
+- ✅ OK make            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/make
+- ✅ OK make            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/make
+- ✅ OK markdown        context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/markdown
+- ✅ OK markdown        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown
+- ✅ OK markdown        folds           /usr/local/share/nvim/runtime/queries/markdown
+- ✅ OK markdown        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown
+- ✅ OK markdown        highlights      /usr/local/share/nvim/runtime/queries/markdown
+- ✅ OK markdown        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown
+- ✅ OK markdown        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown
+- ✅ OK markdown        injections      /usr/local/share/nvim/runtime/queries/markdown
+- ✅ OK markdown        textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/markdown
+- ✅ OK markdown_inline highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown_inline
+- ✅ OK markdown_inline highlights      /usr/local/share/nvim/runtime/queries/markdown_inline
+- ✅ OK markdown_inline injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/markdown_inline
+- ✅ OK markdown_inline injections      /usr/local/share/nvim/runtime/queries/markdown_inline
+- ✅ OK matlab          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/matlab
+- ✅ OK matlab          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/matlab
+- ✅ OK matlab          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/matlab
+- ✅ OK matlab          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/matlab
+- ✅ OK matlab          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/matlab
+- ✅ OK matlab          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/matlab
+- ✅ OK matlab          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/matlab
+- ✅ OK menhir          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/menhir
+- ✅ OK menhir          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/menhir
+- ✅ OK mermaid         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mermaid
+- ✅ OK mermaid         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mermaid
+- ✅ OK mermaid         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mermaid
+- ✅ OK mermaid         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mermaid
+- ✅ OK meson           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/meson
+- ✅ OK meson           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/meson
+- ✅ OK meson           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/meson
+- ✅ OK meson           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/meson
+- ✅ OK mlir            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mlir
+- ✅ OK mlir            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mlir
+- ✅ OK mlir            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/mlir
+- ✅ OK muttrc          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/muttrc
+- ✅ OK muttrc          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/muttrc
+- ✅ OK nasm            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nasm
+- ✅ OK nasm            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nasm
+- ✅ OK nasm            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/nasm
+- ✅ OK nginx           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nginx
+- ✅ OK nginx           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nginx
+- ✅ OK nginx           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nginx
+- ✅ OK nickel          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nickel
+- ✅ OK nickel          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nickel
+- ✅ OK nickel          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nickel
+- ✅ OK nim             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/nim
+- ✅ OK nim             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim
+- ✅ OK nim             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim
+- ✅ OK nim             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim
+- ✅ OK nim             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim
+- ✅ OK nim             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/nim
+- ✅ OK nim_format_string highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim_format_string
+- ✅ OK nim_format_string injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nim_format_string
+- ✅ OK ninja           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ninja
+- ✅ OK ninja           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ninja
+- ✅ OK ninja           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ninja
+- ✅ OK ninja           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ninja
+- ✅ OK nix             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/nix
+- ✅ OK nix             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nix
+- ✅ OK nix             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nix
+- ✅ OK nix             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nix
+- ✅ OK nix             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nix
+- ✅ OK nix             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nix
+- ✅ OK nix             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/nix
+- ✅ OK nqc             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nqc
+- ✅ OK nqc             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nqc
+- ✅ OK nqc             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nqc
+- ✅ OK nqc             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nqc
+- ✅ OK nqc             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nqc
+- ✅ OK nu              context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/nu
+- ✅ OK nu              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nu
+- ✅ OK nu              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nu
+- ✅ OK nu              indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nu
+- ✅ OK nu              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/nu
+- ✅ OK objc            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objc
+- ✅ OK objc            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objc
+- ✅ OK objc            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objc
+- ✅ OK objc            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objc
+- ✅ OK objc            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objc
+- ✅ OK objdump         context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/objdump
+- ✅ OK objdump         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objdump
+- ✅ OK objdump         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/objdump
+- ✅ OK ocaml           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/ocaml
+- ✅ OK ocaml           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml
+- ✅ OK ocaml           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml
+- ✅ OK ocaml           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml
+- ✅ OK ocaml           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml
+- ✅ OK ocaml           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml
+- ✅ OK ocaml           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/ocaml
+- ✅ OK ocaml_interface context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/ocaml_interface
+- ✅ OK ocaml_interface folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml_interface
+- ✅ OK ocaml_interface highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml_interface
+- ✅ OK ocaml_interface indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml_interface
+- ✅ OK ocaml_interface injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml_interface
+- ✅ OK ocaml_interface locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocaml_interface
+- ✅ OK ocamllex        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocamllex
+- ✅ OK ocamllex        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ocamllex
+- ✅ OK odin            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/odin
+- ✅ OK odin            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/odin
+- ✅ OK odin            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/odin
+- ✅ OK odin            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/odin
+- ✅ OK odin            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/odin
+- ✅ OK odin            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/odin
+- ✅ OK odin            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/odin
+- ✅ OK org             folds           /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK org             highlights      /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK org             images          /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK org             injections      /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK org             markup          /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK org             org_indent      /home/huaqli/.local/share/nvim/plugins/orgmode/queries/org
+- ✅ OK pascal          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pascal
+- ✅ OK pascal          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pascal
+- ✅ OK pascal          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pascal
+- ✅ OK pascal          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pascal
+- ✅ OK pascal          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pascal
+- ✅ OK passwd          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/passwd
+- ✅ OK pem             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pem
+- ✅ OK pem             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pem
+- ✅ OK pem             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pem
+- ✅ OK perl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/perl
+- ✅ OK perl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/perl
+- ✅ OK perl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/perl
+- ✅ OK perl            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/perl
+- ✅ OK php             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/php
+- ✅ OK php             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php
+- ✅ OK php             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php
+- ✅ OK php             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php
+- ✅ OK php             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php
+- ✅ OK php             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php
+- ✅ OK php             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/php
+- ✅ OK php_only        context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/php_only
+- ✅ OK php_only        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php_only
+- ✅ OK php_only        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php_only
+- ✅ OK php_only        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php_only
+- ✅ OK php_only        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php_only
+- ✅ OK php_only        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/php_only
+- ✅ OK php_only        textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/php_only
+- ✅ OK phpdoc          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/phpdoc
+- ✅ OK pioasm          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pioasm
+- ✅ OK pioasm          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pioasm
+- ✅ OK po              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/po
+- ✅ OK po              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/po
+- ✅ OK po              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/po
+- ✅ OK pod             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pod
+- ✅ OK poe_filter      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/poe_filter
+- ✅ OK poe_filter      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/poe_filter
+- ✅ OK poe_filter      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/poe_filter
+- ✅ OK poe_filter      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/poe_filter
+- ✅ OK pony            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pony
+- ✅ OK pony            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pony
+- ✅ OK pony            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pony
+- ✅ OK pony            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pony
+- ✅ OK pony            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pony
+- ✅ OK powershell      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/powershell
+- ✅ OK powershell      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/powershell
+- ✅ OK powershell      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/powershell
+- ✅ OK powershell      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/powershell
+- ✅ OK powershell      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/powershell
+- ✅ OK printf          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/printf
+- ✅ OK prisma          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/prisma
+- ✅ OK prisma          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prisma
+- ✅ OK prisma          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prisma
+- ✅ OK prisma          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prisma
+- ✅ OK problog         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/problog
+- ✅ OK problog         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/problog
+- ✅ OK problog         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/problog
+- ✅ OK problog         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/problog
+- ✅ OK prolog          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prolog
+- ✅ OK prolog          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prolog
+- ✅ OK prolog          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prolog
+- ✅ OK prolog          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prolog
+- ✅ OK promql          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/promql
+- ✅ OK promql          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/promql
+- ✅ OK properties      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/properties
+- ✅ OK properties      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/properties
+- ✅ OK properties      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/properties
+- ✅ OK proto           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/proto
+- ✅ OK proto           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/proto
+- ✅ OK proto           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/proto
+- ✅ OK proto           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/proto
+- ✅ OK proto           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/proto
+- ✅ OK prql            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prql
+- ✅ OK prql            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/prql
+- ✅ OK psv             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/psv
+- ✅ OK pug             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pug
+- ✅ OK pug             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pug
+- ✅ OK puppet          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/puppet
+- ✅ OK puppet          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/puppet
+- ✅ OK puppet          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/puppet
+- ✅ OK puppet          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/puppet
+- ✅ OK puppet          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/puppet
+- ✅ OK purescript      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/purescript
+- ✅ OK purescript      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/purescript
+- ✅ OK purescript      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/purescript
+- ✅ OK pymanifest      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pymanifest
+- ✅ OK pymanifest      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/pymanifest
+- ✅ OK python          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/python
+- ✅ OK python          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/python
+- ✅ OK python          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/python
+- ✅ OK python          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/python
+- ✅ OK python          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/python
+- ✅ OK python          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/python
+- ✅ OK python          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/python
+- ✅ OK ql              folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ql
+- ✅ OK ql              highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ql
+- ✅ OK ql              indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ql
+- ✅ OK ql              injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ql
+- ✅ OK ql              locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ql
+- ✅ OK ql              textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/ql
+- ✅ OK qmldir          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/qmldir
+- ✅ OK qmldir          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/qmldir
+- ✅ OK qmljs           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/qmljs
+- ✅ OK qmljs           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/qmljs
+- ✅ OK qmljs           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/qmljs
+- ✅ OK query           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/query
+- ✅ OK query           folds           /usr/local/share/nvim/runtime/queries/query
+- ✅ OK query           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/query
+- ✅ OK query           highlights      /usr/local/share/nvim/runtime/queries/query
+- ✅ OK query           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/query
+- ✅ OK query           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/query
+- ✅ OK query           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/query
+- ✅ OK query           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/query
+- ✅ OK r               context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/r
+- ✅ OK r               highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/r
+- ✅ OK r               indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/r
+- ✅ OK r               injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/r
+- ✅ OK r               locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/r
+- ✅ OK r               textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/r
+- ✅ OK racket          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/racket
+- ✅ OK racket          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/racket
+- ✅ OK racket          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/racket
+- ✅ OK ralph           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ralph
+- ✅ OK ralph           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ralph
+- ✅ OK rasi            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rasi
+- ✅ OK rasi            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rasi
+- ✅ OK rasi            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rasi
+- ✅ OK rasi            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rasi
+- ✅ OK rasi            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rasi
+- ✅ OK razor           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/razor
+- ✅ OK razor           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/razor
+- ✅ OK razor           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/razor
+- ✅ OK rbs             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rbs
+- ✅ OK rbs             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rbs
+- ✅ OK rbs             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rbs
+- ✅ OK rbs             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rbs
+- ✅ OK re2c            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/re2c
+- ✅ OK re2c            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/re2c
+- ✅ OK re2c            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/re2c
+- ✅ OK re2c            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/re2c
+- ✅ OK re2c            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/re2c
+- ✅ OK readline        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/readline
+- ✅ OK readline        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/readline
+- ✅ OK readline        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/readline
+- ✅ OK readline        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/readline
+- ✅ OK readline        textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/readline
+- ✅ OK regex           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/regex
+- ✅ OK rego            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rego
+- ✅ OK rego            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rego
+- ✅ OK requirements    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/requirements
+- ✅ OK requirements    injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/requirements
+- ✅ OK rescript        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rescript
+- ✅ OK rescript        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rescript
+- ✅ OK rescript        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rescript
+- ✅ OK rescript        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rescript
+- ✅ OK rescript        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rescript
+- ✅ OK rnoweb          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rnoweb
+- ✅ OK rnoweb          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rnoweb
+- ✅ OK rnoweb          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rnoweb
+- ✅ OK robot           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robot
+- ✅ OK robot           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robot
+- ✅ OK robot           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robot
+- ✅ OK robot           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robot
+- ✅ OK robots          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robots
+- ✅ OK robots          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/robots
+- ✅ OK roc             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/roc
+- ✅ OK roc             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/roc
+- ✅ OK roc             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/roc
+- ✅ OK roc             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/roc
+- ✅ OK ron             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ron
+- ✅ OK ron             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ron
+- ✅ OK ron             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ron
+- ✅ OK ron             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ron
+- ✅ OK ron             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ron
+- ✅ OK rst             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rst
+- ✅ OK rst             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rst
+- ✅ OK rst             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rst
+- ✅ OK rst             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/rst
+- ✅ OK ruby            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/ruby
+- ✅ OK ruby            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ruby
+- ✅ OK ruby            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ruby
+- ✅ OK ruby            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ruby
+- ✅ OK ruby            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ruby
+- ✅ OK ruby            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ruby
+- ✅ OK ruby            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/ruby
+- ✅ OK runescript      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/runescript
+- ✅ OK runescript      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/runescript
+- ✅ OK rust            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/rust
+- ✅ OK rust            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rust
+- ✅ OK rust            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rust
+- ✅ OK rust            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rust
+- ✅ OK rust            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rust
+- ✅ OK rust            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/rust
+- ✅ OK rust            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/rust
+- ✅ OK scala           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/scala
+- ✅ OK scala           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scala
+- ✅ OK scala           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scala
+- ✅ OK scala           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scala
+- ✅ OK scala           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scala
+- ✅ OK scala           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/scala
+- ✅ OK scfg            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scfg
+- ✅ OK scfg            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scfg
+- ✅ OK scheme          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scheme
+- ✅ OK scheme          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scheme
+- ✅ OK scheme          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scheme
+- ✅ OK scss            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/scss
+- ✅ OK scss            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scss
+- ✅ OK scss            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scss
+- ✅ OK scss            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scss
+- ✅ OK scss            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/scss
+- ✅ OK scss            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/scss
+- ✅ OK sflog           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sflog
+- ✅ OK slang           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slang
+- ✅ OK slang           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slang
+- ✅ OK slang           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slang
+- ✅ OK slang           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slang
+- ✅ OK slang           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slang
+- ✅ OK slang           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/slang
+- ✅ OK slim            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slim
+- ✅ OK slim            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slim
+- ✅ OK slim            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slim
+- ✅ OK slim            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slim
+- ✅ OK slim            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slim
+- ✅ OK slint           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slint
+- ✅ OK slint           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slint
+- ✅ OK slint           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slint
+- ✅ OK slint           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slint
+- ✅ OK slint           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/slint
+- ✅ OK smali           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/smali
+- ✅ OK smali           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smali
+- ✅ OK smali           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smali
+- ✅ OK smali           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smali
+- ✅ OK smali           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smali
+- ✅ OK smali           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smali
+- ✅ OK smithy          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smithy
+- ✅ OK smithy          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/smithy
+- ✅ OK snakemake       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/snakemake
+- ✅ OK snakemake       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/snakemake
+- ✅ OK snakemake       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/snakemake
+- ✅ OK snakemake       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/snakemake
+- ✅ OK snakemake       locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/snakemake
+- ✅ OK solidity        context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/solidity
+- ✅ OK solidity        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/solidity
+- ✅ OK solidity        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/solidity
+- ✅ OK solidity        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/solidity
+- ✅ OK soql            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/soql
+- ✅ OK sosl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sosl
+- ✅ OK sourcepawn      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sourcepawn
+- ✅ OK sourcepawn      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sourcepawn
+- ✅ OK sourcepawn      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sourcepawn
+- ✅ OK sparql          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sparql
+- ✅ OK sparql          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sparql
+- ✅ OK sparql          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sparql
+- ✅ OK sparql          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sparql
+- ✅ OK sparql          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sparql
+- ✅ OK sql             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sql
+- ✅ OK sql             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sql
+- ✅ OK sql             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sql
+- ✅ OK sql             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sql
+- ✅ OK squirrel        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/squirrel
+- ✅ OK squirrel        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/squirrel
+- ✅ OK squirrel        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/squirrel
+- ✅ OK squirrel        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/squirrel
+- ✅ OK squirrel        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/squirrel
+- ✅ OK ssh_config      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ssh_config
+- ✅ OK ssh_config      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ssh_config
+- ✅ OK ssh_config      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ssh_config
+- ✅ OK ssh_config      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ssh_config
+- ✅ OK ssh_config      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ssh_config
+- ✅ OK starlark        context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/starlark
+- ✅ OK starlark        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/starlark
+- ✅ OK starlark        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/starlark
+- ✅ OK starlark        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/starlark
+- ✅ OK starlark        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/starlark
+- ✅ OK starlark        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/starlark
+- ✅ OK strace          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/strace
+- ✅ OK strace          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/strace
+- ✅ OK styled          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/styled
+- ✅ OK styled          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/styled
+- ✅ OK styled          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/styled
+- ✅ OK styled          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/styled
+- ✅ OK supercollider   folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/supercollider
+- ✅ OK supercollider   highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/supercollider
+- ✅ OK supercollider   indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/supercollider
+- ✅ OK supercollider   injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/supercollider
+- ✅ OK supercollider   locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/supercollider
+- ✅ OK supercollider   textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/supercollider
+- ✅ OK superhtml       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/superhtml
+- ✅ OK superhtml       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/superhtml
+- ✅ OK surface         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/surface
+- ✅ OK surface         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/surface
+- ✅ OK surface         indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/surface
+- ✅ OK surface         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/surface
+- ✅ OK svelte          context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/svelte
+- ✅ OK svelte          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/svelte
+- ✅ OK svelte          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/svelte
+- ✅ OK svelte          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/svelte
+- ✅ OK svelte          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/svelte
+- ✅ OK svelte          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/svelte
+- ✅ OK svelte          textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/svelte
+- ✅ OK sway            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sway
+- ✅ OK sway            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sway
+- ✅ OK sway            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sway
+- ✅ OK sway            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sway
+- ✅ OK sway            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sway
+- ✅ OK swift           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/swift
+- ✅ OK swift           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/swift
+- ✅ OK swift           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/swift
+- ✅ OK swift           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/swift
+- ✅ OK swift           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/swift
+- ✅ OK swift           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/swift
+- ✅ OK swift           textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/swift
+- ✅ OK sxhkdrc         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sxhkdrc
+- ✅ OK sxhkdrc         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sxhkdrc
+- ✅ OK sxhkdrc         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/sxhkdrc
+- ✅ OK systemtap       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/systemtap
+- ✅ OK systemtap       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/systemtap
+- ✅ OK systemtap       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/systemtap
+- ✅ OK systemtap       locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/systemtap
+- ✅ OK systemverilog   context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/systemverilog
+- ✅ OK systemverilog   textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/systemverilog
+- ✅ OK t32             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/t32
+- ✅ OK t32             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/t32
+- ✅ OK t32             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/t32
+- ✅ OK t32             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/t32
+- ✅ OK t32             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/t32
+- ✅ OK tablegen        folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tablegen
+- ✅ OK tablegen        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tablegen
+- ✅ OK tablegen        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tablegen
+- ✅ OK tablegen        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tablegen
+- ✅ OK tablegen        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tablegen
+- ✅ OK tact            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/tact
+- ✅ OK tact            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tact
+- ✅ OK tact            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tact
+- ✅ OK tact            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tact
+- ✅ OK tact            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tact
+- ✅ OK tact            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tact
+- ✅ OK tact            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/tact
+- ✅ OK tcl             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/tcl
+- ✅ OK tcl             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tcl
+- ✅ OK tcl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tcl
+- ✅ OK tcl             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tcl
+- ✅ OK tcl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tcl
+- ✅ OK teal            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/teal
+- ✅ OK teal            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/teal
+- ✅ OK teal            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/teal
+- ✅ OK teal            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/teal
+- ✅ OK teal            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/teal
+- ✅ OK teal            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/teal
+- ✅ OK templ           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/templ
+- ✅ OK templ           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/templ
+- ✅ OK templ           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/templ
+- ✅ OK templ           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/templ
+- ✅ OK tera            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tera
+- ✅ OK tera            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tera
+- ✅ OK terraform       context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/terraform
+- ✅ OK terraform       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/terraform
+- ✅ OK terraform       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/terraform
+- ✅ OK terraform       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/terraform
+- ✅ OK terraform       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/terraform
+- ✅ OK terraform       textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/terraform
+- ✅ OK textproto       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/textproto
+- ✅ OK textproto       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/textproto
+- ✅ OK textproto       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/textproto
+- ✅ OK textproto       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/textproto
+- ✅ OK thrift          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/thrift
+- ✅ OK thrift          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/thrift
+- ✅ OK thrift          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/thrift
+- ✅ OK thrift          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/thrift
+- ✅ OK thrift          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/thrift
+- ✅ OK tiger           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tiger
+- ✅ OK tiger           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tiger
+- ✅ OK tiger           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tiger
+- ✅ OK tiger           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tiger
+- ✅ OK tiger           locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tiger
+- ✅ OK tlaplus         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tlaplus
+- ✅ OK tlaplus         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tlaplus
+- ✅ OK tlaplus         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tlaplus
+- ✅ OK tlaplus         locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tlaplus
+- ✅ OK tmux            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tmux
+- ✅ OK tmux            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tmux
+- ✅ OK todotxt         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/todotxt
+- ✅ OK toml            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/toml
+- ✅ OK toml            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/toml
+- ✅ OK toml            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/toml
+- ✅ OK toml            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/toml
+- ✅ OK toml            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/toml
+- ✅ OK toml            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/toml
+- ✅ OK toml            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/toml
+- ✅ OK tsv             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsv
+- ✅ OK tsx             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/tsx
+- ✅ OK tsx             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsx
+- ✅ OK tsx             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsx
+- ✅ OK tsx             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsx
+- ✅ OK tsx             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsx
+- ✅ OK tsx             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/tsx
+- ✅ OK tsx             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/tsx
+- ✅ OK turtle          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/turtle
+- ✅ OK turtle          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/turtle
+- ✅ OK turtle          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/turtle
+- ✅ OK turtle          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/turtle
+- ✅ OK turtle          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/turtle
+- ✅ OK twig            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/twig
+- ✅ OK twig            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/twig
+- ✅ OK twig            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/twig
+- ✅ OK typescript      context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/typescript
+- ✅ OK typescript      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typescript
+- ✅ OK typescript      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typescript
+- ✅ OK typescript      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typescript
+- ✅ OK typescript      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typescript
+- ✅ OK typescript      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typescript
+- ✅ OK typescript      textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/typescript
+- ✅ OK typespec        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typespec
+- ✅ OK typespec        indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typespec
+- ✅ OK typespec        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typespec
+- ✅ OK typoscript      context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/typoscript
+- ✅ OK typoscript      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typoscript
+- ✅ OK typoscript      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typoscript
+- ✅ OK typoscript      indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typoscript
+- ✅ OK typoscript      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typoscript
+- ✅ OK typst           context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/typst
+- ✅ OK typst           folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typst
+- ✅ OK typst           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typst
+- ✅ OK typst           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typst
+- ✅ OK typst           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/typst
+- ✅ OK udev            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/udev
+- ✅ OK udev            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/udev
+- ✅ OK udev            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/udev
+- ✅ OK ungrammar       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ungrammar
+- ✅ OK ungrammar       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ungrammar
+- ✅ OK ungrammar       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ungrammar
+- ✅ OK ungrammar       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ungrammar
+- ✅ OK ungrammar       locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ungrammar
+- ✅ OK unison          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/unison
+- ✅ OK unison          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/unison
+- ✅ OK unison          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/unison
+- ✅ OK usd             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/usd
+- ✅ OK usd             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/usd
+- ✅ OK usd             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/usd
+- ✅ OK usd             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/usd
+- ✅ OK usd             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/usd
+- ✅ OK usd             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/usd
+- ✅ OK uxntal          folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/uxntal
+- ✅ OK uxntal          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/uxntal
+- ✅ OK uxntal          indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/uxntal
+- ✅ OK uxntal          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/uxntal
+- ✅ OK uxntal          locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/uxntal
+- ✅ OK v               folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/v
+- ✅ OK v               highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/v
+- ✅ OK v               indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/v
+- ✅ OK v               injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/v
+- ✅ OK v               locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/v
+- ✅ OK v               textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/v
+- ✅ OK vala            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vala
+- ✅ OK vala            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vala
+- ✅ OK vala            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vala
+- ✅ OK vento           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vento
+- ✅ OK vento           injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vento
+- ✅ OK verilog         folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/verilog
+- ✅ OK verilog         highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/verilog
+- ✅ OK verilog         injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/verilog
+- ✅ OK vhdl            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/vhdl
+- ✅ OK vhdl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vhdl
+- ✅ OK vhdl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vhdl
+- ✅ OK vhdl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vhdl
+- ✅ OK vhs             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vhs
+- ✅ OK vhs             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vhs
+- ✅ OK vim             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/vim
+- ✅ OK vim             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vim
+- ✅ OK vim             folds           /usr/local/share/nvim/runtime/queries/vim
+- ✅ OK vim             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vim
+- ✅ OK vim             highlights      /usr/local/share/nvim/runtime/queries/vim
+- ✅ OK vim             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vim
+- ✅ OK vim             injections      /usr/local/share/nvim/runtime/queries/vim
+- ✅ OK vim             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vim
+- ✅ OK vim             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/vim
+- ✅ OK vimdoc          highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vimdoc
+- ✅ OK vimdoc          highlights      /usr/local/share/nvim/runtime/queries/vimdoc
+- ✅ OK vimdoc          injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vimdoc
+- ✅ OK vimdoc          injections      /usr/local/share/nvim/runtime/queries/vimdoc
+- ✅ OK vrl             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vrl
+- ✅ OK vrl             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vrl
+- ✅ OK vrl             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vrl
+- ✅ OK vrl             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vrl
+- ✅ OK vrl             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vrl
+- ✅ OK vue             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/vue
+- ✅ OK vue             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vue
+- ✅ OK vue             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vue
+- ✅ OK vue             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vue
+- ✅ OK vue             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/vue
+- ✅ OK vue             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/vue
+- ✅ OK wgsl            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl
+- ✅ OK wgsl            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl
+- ✅ OK wgsl            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl
+- ✅ OK wgsl            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl
+- ✅ OK wgsl            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/wgsl
+- ✅ OK wgsl_bevy       folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl_bevy
+- ✅ OK wgsl_bevy       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl_bevy
+- ✅ OK wgsl_bevy       indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wgsl_bevy
+- ✅ OK wgsl_bevy       textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/wgsl_bevy
+- ✅ OK wing            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wing
+- ✅ OK wing            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wing
+- ✅ OK wing            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wing
+- ✅ OK wing            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wing
+- ✅ OK wit             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wit
+- ✅ OK wit             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wit
+- ✅ OK wit             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/wit
+- ✅ OK xcompose        highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xcompose
+- ✅ OK xcompose        injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xcompose
+- ✅ OK xcompose        locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xcompose
+- ✅ OK xml             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/xml
+- ✅ OK xml             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xml
+- ✅ OK xml             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xml
+- ✅ OK xml             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xml
+- ✅ OK xml             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xml
+- ✅ OK xml             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xml
+- ✅ OK xresources      folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xresources
+- ✅ OK xresources      highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xresources
+- ✅ OK xresources      injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xresources
+- ✅ OK xresources      locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/xresources
+- ✅ OK yaml            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/yaml
+- ✅ OK yaml            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yaml
+- ✅ OK yaml            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yaml
+- ✅ OK yaml            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yaml
+- ✅ OK yaml            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yaml
+- ✅ OK yaml            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yaml
+- ✅ OK yaml            textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/yaml
+- ✅ OK yang            context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/yang
+- ✅ OK yang            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yang
+- ✅ OK yang            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yang
+- ✅ OK yang            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yang
+- ✅ OK yang            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yang
+- ✅ OK yuck            folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yuck
+- ✅ OK yuck            highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yuck
+- ✅ OK yuck            indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yuck
+- ✅ OK yuck            injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yuck
+- ✅ OK yuck            locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/yuck
+- ✅ OK zathurarc       highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zathurarc
+- ✅ OK zathurarc       injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zathurarc
+- ✅ OK zig             context         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-context/queries/zig
+- ✅ OK zig             folds           /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zig
+- ✅ OK zig             highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zig
+- ✅ OK zig             indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zig
+- ✅ OK zig             injections      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zig
+- ✅ OK zig             locals          /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/zig
+- ✅ OK zig             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/zig
+- ✅ OK ziggy           highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ziggy
+- ✅ OK ziggy           indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ziggy
+- ✅ OK ziggy_schema    highlights      /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ziggy_schema
+- ✅ OK ziggy_schema    indents         /home/huaqli/.local/share/nvim/plugins/nvim-treesitter/queries/ziggy_schema
+- ✅ OK zsh             textobjects     /home/huaqli/.local/share/nvim/plugins/nvim-treesitter-textobjects/queries/zsh
+
